@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: flask-instagrapi-app
+    env: python
+    buildCommand: "poetry install"
+    startCommand: "poetry run gunicorn app:app --bind 0.0.0.0:$PORT"
+    plan: free
