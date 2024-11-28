@@ -1,0 +1,5 @@
+# Initialize a poetry project
+poetry init --name flask-instagrapi-app --description "Instagram Automation App" --author "Your Name" --python "^3.9" --dev-dependency flask --dev-dependency instagrapi
+
+# Add required dependencies
+poetry add flask instagrapi gunicorn
